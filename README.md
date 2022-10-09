@@ -1,4 +1,2 @@
-# PHOTOGRAPHY
-A TOUCH TO ART, NATURE AND PASSION
-This project is stil underwork.
-Have to add a image slider.
+# PHOTOGRAPHY :image:
+A TOUCH TO ART:art:, NATURE:nature: AND PASSION
