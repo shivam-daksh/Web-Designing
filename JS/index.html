@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/photography.css">
+    <title>Photography</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Akronim&display=swap');
+		
+    body{
+        background-color: black;
+        padding: 0px;
+        color:white;
+    }
+    *{
+        margin: 0px;
+        box-sizing: border-box;
+        padding: 0px;
+    }
+    img{
+        width: 100%;
+
+    }
+    div#main-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items:center;
+        align-content: center;
+        flex-wrap: wrap;
+
+    }
+    .img-container{
+        position: relative;
+        padding: 1em;
+        width: 90%;
+        text-align: center;
+        border-collapse: collapse;
+    }
+    footer{
+        width: 100%;
+        border-top: groove 1px lightgray;
+        background-color: rgba(112, 128, 144, 0.185);
+        padding:1em;
+    }
+    #footer-container{
+        display: flex;
+        justify-content: flex-start;
+        align-items:baseline;
+        align-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .row{
+        text-align: left;
+        height: fit-content;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    .row>div{
+        padding-top:0.51em ;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .row>div:last-child{
+        border-bottom: dashed 1px lightgreen;
+        padding-bottom: 0.51rem;
+    }
+    .row:first-line{
+        font-weight: bold;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+@media screen and (min-width:1024px) and (max-width:4096px) {
+    header{
+        width: 100%;
+        background-image: url("../images/\(12\).jpg");
+        background-size:cover;
+        background-position-y: 25%;
+        background-repeat: no-repeat;
+        min-height: 200px;
+        background-color: black;
+        height: 200px;  
+        margin-bottom: 1em;
+    }
+    div#header-container{
+        z-index: 2;
+        position: relative;
+        height: inherit;
+        padding: 20px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.8);
+    }
+    #header{
+        font-size: 3.5rem;
+        color:rgb(0, 0, 0,0);
+        text-shadow: rgb(0,255,150) 0px 0px 1px;
+        font-weight:lighter;
+        letter-spacing: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #descrip{
+        font-size: x-large;
+        font-style: oblique;
+        font-weight: light;
+        color: aqua;
+        font-family: akronim;
+        letter-spacing: 5px;
+    }
+    main>div#header-container{
+        width:100%;
+
+    }
+    .img-container{
+        width: 33%;
+    }
+        
+   
+    .row{
+        width:33.33%;
+    }
+}
+@media screen and (max-width:1024px) and (min-width:480px) {
+    header{
+        width: 100%;
+        background-image: url("../images/\(12\).jpg");
+        background-size:cover;
+        background-position-y: 25%;
+        background-repeat: no-repeat;
+        min-height: 150px;
+        background-color: black;
+        height: 150px;  
+        margin-bottom: 1em;
+    }
+    div#header-container{
+        z-index: 2;
+        position: relative;
+        height: inherit;
+        padding: 10px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.8);
+    }
+    #header{
+        font-size: 2.5rem;
+        color:rgb(0, 0, 0,0);
+        text-shadow: rgb(0,255,150) 0px 0px 1px;
+        font-weight:lighter;
+        letter-spacing: 10px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #descrip{
+        font-size: x-large;
+        font-style: oblique;
+        font-weight: light;
+        color: aqua;
+        font-family: akronim;
+        letter-spacing: 2.5px;
+    }
+    div#header-container{
+        width:100%;
+
+    }
+    .img-container{
+        width: 50%;
+    }
+    .row{
+        width:50%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    header{
+        width: 100%;
+        background-image: url("../images/\(12\).jpg");
+        background-size:cover;
+        background-position-y: 25%;
+        background-repeat: no-repeat;
+        min-height: 100px;
+        background-color: black;
+        height: 100px;  
+        margin-bottom: 1em;
+    }
+    div#header-container{
+        z-index: 2;
+        position: relative;
+        height: inherit;
+        padding: 10px;
+        text-align: center;
+        background-color: rgba(0,0,0,0.8);
+    }
+    #header{
+        font-size: 2rem;
+        color:rgb(0, 0, 0,0);
+        text-shadow: rgb(0,255,150) 0px 0px 1px;
+        font-weight:lighter;
+        letter-spacing: 5px;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+    #descrip{
+        text-align: center;
+        font-size: medium;
+        font-style: oblique;
+        font-weight: light;
+        color: aqua;
+        font-family: akronim;
+        letter-spacing: 1px;
+    }
+    .img-container{
+        width:100%;
+    }
+    .row{
+        width: 100%;    
+    }
+    .rights{
+        font-size: xx-small;
+    }
+}
+
+.rights{
+    width:100%;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: small;
+}
+.rights>div{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+span#copyright{
+    color: orangered;
+    cursor: pointer;
+}
+span#credit{
+    color: orangered;
+    cursor: pointer;
+}
+
+        </style>
+</head>
+<body>
+    
+    <header>
+            <div id="header-container">
+                <div id="header">PHOTOGRAPHY</div>
+                <div id="descrip">A TOUCH TO NATURE</div>
+            </div>
+    </header>
+    <main>
+        <div id="main-container">
+            <div class="img-container">
+                <img src="../images/(18).jpg" alt="Image1" id="image1">
+                <div class="alt-text">Image1</div>
+            </div>
+            <div class="img-container">
+                <img src="../images/(2).jpg" alt="Image2" id="image2">
+                <div class="alt-text">"Image2"</div>
+            </div>
+            <div class="img-container">
+                <img src="../images/(3).jpg" alt="Image3" id="image3">
+                <div class="alt-text">"Image3"</div>
+            </div>
+            <div class="img-container">
+                <img src="../images/(4).jpg" alt="Image4" id="image4">
+                <div class="alt-text">"Image4"</div>
+            </div>
+            <div class="img-container">
+                <img src="../images/(5).jpg" alt="Image5" id="image5">
+                <div class="alt-text">"Image5"</div>
+            </div>
+            <div class="img-container">
+                <img src="../images/(25).jpg" alt="Image6" id="image6">
+                <div class="alt-text">"Image6"</div>
+            </div>
+            <div class="img-container">
+                <img src="../images/(7).jpg" alt="Image7" id="image7">
+                <div class="alt-text">"Image7"</div>
+            </div>
+            <div class="img-container">
+                <img src="../images/(10).jpg" alt="Image8" id="image8">
+                <div class="alt-text">"Image8"</div>
+            </div>
+            <div class="img-container">
+                <img src="../images/(9).jpg" alt="Image9" id="image9">
+                <div class="alt-text">"Image9"</div>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <div id="footer-container">
+                <div class="row" id="column1"> Section1
+                    <div class="ft-links">Link1</div>
+                    <div class="ft-links">Link2</div>
+                    <div class="ft-links">Link3</div>
+                    <div class="ft-links">Link4</div>
+                    <div class="ft-links">Link5</div>
+                </div>
+                <div class="row" id="column2">Section2
+                    <div class="ft-links">Link1</div>
+                    <div class="ft-links">Link2</div>
+                    <div class="ft-links">Link3</div>
+                </div>
+                <div class="row" id="column3">Section3
+                    <div class="ft-links">Link1</div>
+                    <div class="ft-links">Link2</div>
+                    <div class="ft-links">Link3</div>
+                    <div class="ft-links">Link4</div>
+                </div>
+            </div>
+            <div class="rights">
+                <div>© Copyright 2022<span id="copyright"> Photography By Shivam Daksh</span> All Rights Reserved</div>
+                <div>Theme Designed By <span id="credit">Shivam Daksh </span></div>
+            </div>
+    </footer>
+    
+</body>
+</html>
