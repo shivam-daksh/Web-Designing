@@ -675,9 +675,9 @@ ul.submenu>li:hover{
     color: white;
 }
 span#closeNav{
-    display: absolute;
+    display: none;
     float:right;
-    position:fixed;
+    position:absolute;
     z-index: 6;
     right: 50%;
     top: 10px;
